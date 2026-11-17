@@ -7,9 +7,9 @@
 <meta name="robots" content="noindex,nofollow">
 <title>Revenatrix · Private preview</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link id="gate-font" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 <link rel="preload" href="app.bin" as="fetch" type="application/octet-stream" crossorigin>
-<style>
+<style id="gate-css">
 :root{--navy-950:#020E26;--navy-900:#06173A;--navy-400:#5B6B8A;--navy-200:#C5CCDA;--gold-300:#F4D08E;--gold-400:#EEB75C;--gold-500:#D9A04E;--gold-600:#D19545;--danger:#E5484D;color-scheme:dark}
 *{box-sizing:border-box}html,body{height:100%;margin:0}
 body{font-family:Poppins,"Segoe UI",Arial,sans-serif;color:#fff;-webkit-font-smoothing:antialiased;background-color:var(--navy-950);
@@ -66,7 +66,7 @@ button:hover{filter:brightness(1.08)}button:focus-visible{outline:2px solid var(
 <!-- Netlify Forms: static declaration so the "feedback" form is detected at deploy -->
 <form name="feedback" data-netlify="true" netlify-honeypot="bot-field" hidden><input name="bot-field"><input name="screen"><input name="name"><textarea name="message"></textarea></form>
 <script>
-const P={s:"U6lD4gkSXfyL3QdMCLXRVw==",i:"agTCQNrnT/NawqGF",n:150000};
+const P={s:"P4SMo2MRR489azUNmfqyMQ==",i:"ep6fU5WLDGvEOwp+",n:150000};
 const DATA=fetch("app.bin",{credentials:"same-origin"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.arrayBuffer()});
 DATA.then(()=>{const b=document.getElementById("go");if(b&&b.textContent==="Loading…"){b.disabled=false;b.textContent="Enter"}}).catch(()=>{document.getElementById("err").textContent="The preview could not load. Check your connection and reload the page."});
 const u8=(b)=>Uint8Array.from(atob(b),(c)=>c.charCodeAt(0));
@@ -79,6 +79,7 @@ async function decryptApp(pw){
 }
 function boot(app){
   document.title='Revenatrix · Concept preview';
+  document.getElementById('gate-css')?.remove();document.body.removeAttribute('style');
   const st=document.createElement('style');st.textContent=app.css;document.head.appendChild(st);
   document.getElementById('gate').remove();
   const r=document.createElement('div');r.id='root';document.body.appendChild(r);
