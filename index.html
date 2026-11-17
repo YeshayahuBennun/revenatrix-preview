@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#020E26">
+<meta name="robots" content="noindex,nofollow">
+<title>Revenatrix · Private preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<link rel="preload" href="app.bin" as="fetch" type="application/octet-stream" crossorigin>
+<style>
+:root{--navy-950:#020E26;--navy-900:#06173A;--navy-400:#5B6B8A;--navy-200:#C5CCDA;--gold-300:#F4D08E;--gold-400:#EEB75C;--gold-500:#D9A04E;--gold-600:#D19545;--danger:#E5484D;color-scheme:dark}
+*{box-sizing:border-box}html,body{height:100%;margin:0}
+body{font-family:Poppins,"Segoe UI",Arial,sans-serif;color:#fff;-webkit-font-smoothing:antialiased;background-color:var(--navy-950);
+background-image:radial-gradient(700px 700px at 50% 45%,rgba(238,183,92,.13),transparent 62%),radial-gradient(900px 500px at -10% 110%,rgba(34,64,127,.45),transparent 60%),linear-gradient(rgba(255,255,255,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.025) 1px,transparent 1px);
+background-size:auto,auto,32px 32px,32px 32px}
+.wrap{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:48px 16px}
+.inner{width:100%;max-width:520px}
+.logo{display:flex;align-items:center;justify-content:center;gap:14px}.icon{height:58px;width:auto}
+.word{font-size:34px;font-weight:600;letter-spacing:-.01em;line-height:1}.sol{display:flex;align-items:center;gap:6px;margin-top:9px}
+.sol span{font-size:13px;font-weight:600;letter-spacing:.38em;color:var(--gold-500)}.sol i{height:1px;flex:1;background:rgba(217,160,78,.7)}
+.card{margin-top:40px;border:1px solid rgba(238,183,92,.2);background:rgba(6,23,58,.72);border-radius:24px;padding:32px;box-shadow:0 30px 120px -30px rgba(238,183,92,.35);backdrop-filter:blur(8px)}
+.eyebrow{margin:0;font-size:11px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-400)}
+h1{margin:12px 0 0;font-size:34px;line-height:1.15;font-weight:600;letter-spacing:-.02em}
+.lead{margin:12px 0 0;font-size:15px;line-height:1.65;color:var(--navy-200)}
+label{display:block;margin-top:28px;font-size:12px;color:var(--navy-200)}
+.row{display:flex;gap:8px;margin-top:6px}
+input{min-width:0;flex:1;border:1px solid rgba(255,255,255,.1);background:rgba(2,14,38,.7);color:#fff;border-radius:12px;padding:12px 16px;font:inherit;font-size:16px;outline:none}
+input:focus{border-color:rgba(238,183,92,.6)}input::placeholder{color:var(--navy-400)}
+button{border:0;border-radius:12px;padding:0 20px;font:inherit;font-weight:600;font-size:15px;color:var(--navy-950);background:linear-gradient(135deg,#EEB75C,#D19545);cursor:pointer}
+button:hover{filter:brightness(1.08)}button:focus-visible{outline:2px solid var(--gold-300);outline-offset:2px}button[disabled]{opacity:.6;cursor:wait}
+.err{margin:8px 0 0;font-size:13px;color:var(--danger);min-height:1em}
+.legal{margin:32px auto 0;max-width:460px;text-align:center;font-size:12px;line-height:1.65;color:var(--navy-400)}
+.copy{margin:8px 0 0;text-align:center;font-size:11px;color:rgba(91,107,138,.7)}
+@media (max-width:420px){h1{font-size:28px}.card{padding:24px}.word{font-size:28px}.icon{height:48px}}
+</style>
+</head>
+<body>
+<div class="wrap" id="gate">
+  <div class="inner">
+    <div class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="84 20 258 190" class="icon">
+<defs><linearGradient id="g8" gradientUnits="userSpaceOnUse" x1="300" y1="30" x2="110" y2="205"><stop offset="0" stop-color="#EEB75C"/><stop offset="1" stop-color="#D19545"/></linearGradient></defs><g fill="url(#g8)">
+<rect x="198" y="70" width="19" height="27" rx="2"/>
+<rect x="226" y="50" width="19" height="47" rx="2"/>
+<path d="M256.5 30 H272.5 Q275 30 275 32.5 V80 L257 92.5 Q254 94 254 91 V32.5 Q254 30 256.5 30 Z"/>
+<path d="M125 150 V104 Q125 97 132 97 H160 Q167 97 170.5 103 L173.5 107.5 Q175.5 110 179.5 110 H252.5 Q256.5 110 258.5 107.5 L261.5 103 Q265 97 272 97 H296 Q303 97 303 104 V150" fill="none" stroke="url(#g8)" stroke-width="9.5" stroke-linejoin="round"/>
+<rect x="146" y="129" width="62" height="19.5" rx="8"/>
+<rect x="220" y="129" width="62" height="19.5" rx="8"/>
+<path d="M120 149 H308 C313.5 152 318.5 160 322 170 L333 198.5 Q334 202 330.5 202 H317.5 Q315 202 314 199.5 L298 174.5 Q214 160 130 174.5 L114 199.5 Q113 202 110.5 202 H95.5 Q92 202 93 198.5 L104 170 C107.5 160 112.5 152 120 149 Z"/>
+</g></svg><div><div class="word">Revenatrix</div><div class="sol"><span>SOLUTION</span><i></i></div></div></div>
+    <div class="card">
+      <p class="eyebrow">Private preview</p>
+      <h1>Launching soon.</h1>
+      <p class="lead">This is an early concept of Revenatrix, the AI commercial department for hotels. It is shared privately with a small group for feedback before launch.</p>
+      <form id="f" autocomplete="off" onsubmit="return false">
+        <label for="pw">Password</label>
+        <div class="row"><input id="pw" type="password" placeholder="Enter the password you received" autofocus><button id="go" type="submit" disabled>Loading…</button></div>
+        <p class="err" id="err" role="alert"></p>
+      </form>
+    </div>
+    <p class="legal">Concept demonstration with fictional data. Revenatrix has not launched and does not offer, sell or invoice any product or service through this page.</p>
+    <p class="copy">© 2026 Revenatrix Solution</p>
+  </div>
+</div>
+<!-- Netlify Forms: static declaration so the "feedback" form is detected at deploy -->
+<form name="feedback" data-netlify="true" netlify-honeypot="bot-field" hidden><input name="bot-field"><input name="screen"><input name="name"><textarea name="message"></textarea></form>
+<script>
+const P={s:"DP9j3VnFpQXxagnoh5XOZA==",i:"3kMKza6NA5HHB7Ie",n:150000};
+const DATA=fetch("app.bin",{credentials:"same-origin"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.arrayBuffer()});
+DATA.then(()=>{const b=document.getElementById("go");if(b&&b.textContent==="Loading…"){b.disabled=false;b.textContent="Enter"}}).catch(()=>{document.getElementById("err").textContent="The preview could not load. Check your connection and reload the page."});
+const u8=(b)=>Uint8Array.from(atob(b),(c)=>c.charCodeAt(0));
+async function decryptApp(pw){
+  const base=await crypto.subtle.importKey('raw',new TextEncoder().encode(pw),'PBKDF2',false,['deriveKey']);
+  const key=await crypto.subtle.deriveKey({name:'PBKDF2',salt:u8(P.s),iterations:P.n,hash:'SHA-256'},base,{name:'AES-GCM',length:256},false,['decrypt']);
+  const pt=await crypto.subtle.decrypt({name:'AES-GCM',iv:u8(P.i)},key,await DATA);
+  const txt=await new Response(new Blob([pt]).stream().pipeThrough(new DecompressionStream('gzip'))).text();
+  return JSON.parse(txt);
+}
+function boot(app){
+  document.title='Revenatrix · Concept preview';
+  const st=document.createElement('style');st.textContent=app.css;document.head.appendChild(st);
+  document.getElementById('gate').remove();
+  const r=document.createElement('div');r.id='root';document.body.appendChild(r);
+  const s=document.createElement('script');s.type='module';s.src=URL.createObjectURL(new Blob([app.js],{type:'text/javascript'}));document.body.appendChild(s);
+}
+const K='rvx-preview-pw';
+async function tryPw(pw,remember){
+  try{const app=await decryptApp(pw);if(remember){try{localStorage.setItem(K,pw)}catch(e){}}boot(app);return true}catch(e){return false}
+}
+(async()=>{let saved=null;try{saved=localStorage.getItem(K)}catch(e){}
+  if(saved&&await tryPw(saved,false))return;try{localStorage.removeItem(K)}catch(e){}})();
+document.getElementById('f').addEventListener('submit',async(e)=>{e.preventDefault();
+  const b=document.getElementById('go'),er=document.getElementById('err');b.disabled=true;b.textContent='Opening…';er.textContent='';
+  const ok=await tryPw(document.getElementById('pw').value.trim(),true);
+  if(!ok){b.disabled=false;b.textContent='Enter';er.textContent='That password does not match. Check the message you received and try again.'}});
+</script>
+</body>
+</html>
