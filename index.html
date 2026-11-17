@@ -55,7 +55,7 @@ button:hover{filter:brightness(1.08)}button:focus-visible{outline:2px solid var(
       <p class="lead">This is an early concept of Revenatrix, the AI commercial department for hotels. It is shared privately with a small group for feedback before launch.</p>
       <form id="f" autocomplete="off" onsubmit="return false">
         <label for="pw">Password</label>
-        <div class="row"><input id="pw" type="password" placeholder="Enter the password you received" autofocus><button id="go" type="submit" disabled>Loading…</button></div>
+        <div class="row"><input id="pw" type="password" placeholder="Your password" autofocus><button id="go" type="submit" disabled>Loading…</button></div>
         <p class="err" id="err" role="alert"></p>
       </form>
     </div>
@@ -66,7 +66,7 @@ button:hover{filter:brightness(1.08)}button:focus-visible{outline:2px solid var(
 <!-- Netlify Forms: static declaration so the "feedback" form is detected at deploy -->
 <form name="feedback" data-netlify="true" netlify-honeypot="bot-field" hidden><input name="bot-field"><input name="screen"><input name="name"><textarea name="message"></textarea></form>
 <script>
-const P={s:"DP9j3VnFpQXxagnoh5XOZA==",i:"3kMKza6NA5HHB7Ie",n:150000};
+const P={s:"U6lD4gkSXfyL3QdMCLXRVw==",i:"agTCQNrnT/NawqGF",n:150000};
 const DATA=fetch("app.bin",{credentials:"same-origin"}).then(r=>{if(!r.ok)throw new Error(r.status);return r.arrayBuffer()});
 DATA.then(()=>{const b=document.getElementById("go");if(b&&b.textContent==="Loading…"){b.disabled=false;b.textContent="Enter"}}).catch(()=>{document.getElementById("err").textContent="The preview could not load. Check your connection and reload the page."});
 const u8=(b)=>Uint8Array.from(atob(b),(c)=>c.charCodeAt(0));
